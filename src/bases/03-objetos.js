@@ -1,3 +1,4 @@
+
 const persona = {
   nombre: "Tony",
   apellido: "Peña",
@@ -9,6 +10,11 @@ const persona = {
   },
 };
 
-// console.log(persona.nombre);
-const { nombre, apellido, edad } = persona;
-console.log(nombre, apellido, edad);
+const persona2 = { ...persona };
+console.log(persona2);
+persona2.nombre = "Peter";
+console.log(persona2.nombre);
+
+
+
+
